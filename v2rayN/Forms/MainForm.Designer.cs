@@ -52,6 +52,7 @@
             this.menuAddServer = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRemoveServer = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCopyServer = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuEditServer = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSetDefaultServer = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.menuMoveTop = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,7 +79,6 @@
             this.tsbReload = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbClose = new System.Windows.Forms.ToolStripButton();
-            this.menuEditServer = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsMain.SuspendLayout();
             this.cmsLv.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -238,7 +238,7 @@
             this.menuExport2ServerConfig,
             this.menuShareQRCode});
             this.cmsLv.Name = "cmsLv";
-            this.cmsLv.Size = new System.Drawing.Size(233, 330);
+            this.cmsLv.Size = new System.Drawing.Size(233, 308);
             // 
             // menuAddServer
             // 
@@ -260,6 +260,13 @@
             this.menuCopyServer.Size = new System.Drawing.Size(232, 22);
             this.menuCopyServer.Text = "复制所选服务器";
             this.menuCopyServer.Click += new System.EventHandler(this.menuCopyServer_Click);
+            // 
+            // menuEditServer
+            // 
+            this.menuEditServer.Name = "menuEditServer";
+            this.menuEditServer.Size = new System.Drawing.Size(232, 22);
+            this.menuEditServer.Text = "编辑所选服务器";
+            this.menuEditServer.Click += new System.EventHandler(this.menuEditServer_Click);
             // 
             // menuSetDefaultServer
             // 
@@ -485,13 +492,6 @@
             this.tsbClose.Text = "  最小化  ";
             this.tsbClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbClose.Click += new System.EventHandler(this.tsbClose_Click);
-            // 
-            // menuEditServer
-            // 
-            this.menuEditServer.Name = "menuEditServer";
-            this.menuEditServer.Size = new System.Drawing.Size(232, 22);
-            this.menuEditServer.Text = "编辑所选服务器";
-            this.menuEditServer.Click += new System.EventHandler(this.menuEditServer_Click);
             // 
             // MainForm
             // 
